@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to Sabila's Fruit Shop</h1>
+            <section class="budget-section">
+                <div class="user-budget">
+                    <p>Hurry up and shop delicious fruits NOW!!</p>
+                    <input class="budget" type="number" placeholder="Enter your budget here!!">
+                    <a href="javascript:;" class="submit-budget" onclick="submitBudget()">Submit</a>
+                </div>
+                <div class="budget-details">
+                    <p id="total-budget">Your total budget is: PKR<span>0</span>/=</p>
+                    <p id="remaining-budget">Your remaining budget is: PKR<span>0</span>/=</p>
+                </div>
+
+            </section>
+        </div>
+    </header>
+    <div class="container">
+        <section class="products">
+            <div class="product">
+                <img src="images/apple.jpg" alt="apple">
+                <div class="price">PKR <span class="price-value">250</span>/kg </div>
+                <div class="product-div">
+                    <button onclick="subtract(this)" class="subtract">-</button>
+                    <input type="number" placeholder="0" value="0">
+                    <button onclick="add(this)" class="add">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/apricot.jpg" alt="">
+                <div class="price">PKR <span class="price-value">200</span>/kg </div>
+                <div class="product-div">
+                    <button onclick="subtract(this)" class="subtract">-</button>
+                    <input type="number" placeholder="0" value="0">
+                    <button onclick="add(this)" class="add">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/banana.jpg" alt="">
+                <div class="price">PKR <span class="price-value">100</span>/dozen </div>
+                <div class="product-div">
+                    <button onclick="subtract(this)" class="subtract">-</button>
+                    <input type="number" placeholder="0" value="0">
+                    <button onclick="add(this)" class="add">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/mango.jpg" alt="">
+                <div class="price">PKR <span class="price-value">150</span>/kg </div>
+                <div class="product-div">
+                    <button onclick="subtract(this)" class="subtract">-</button>
+                    <input type="number" placeholder="0" value="0">
+                    <button onclick="add(this)" class="add">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pomogranete.jpg" alt="">
+                <div class="price">PKR <span class="price-value">150</span>/kg </div>
+                <div class="product-div">
+                    <button onclick="subtract(this)" class="subtract">-</button>
+                    <input type="number" placeholder="0" value="0">
+                    <button onclick="add(this)" class="add">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/strawberry.jpg" alt="">
+                <div class="price">PKR <span class="price-value">200</span>/kg </div>
+                <div class="product-div">
+                    <button onclick="subtract(this)" class="subtract">-</button>
+                    <input type="number" placeholder="0" value="0">
+                    <button onclick="add(this)" class="add">+</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

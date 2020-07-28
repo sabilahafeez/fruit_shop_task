@@ -1,0 +1,100 @@
+body {
+    background: #ebe7ec;
+    margin: 0;
+    font-family: cursive;
+}
+
+.submit-budget {
+    text-decoration: none;
+    color: white;
+    background-color: #c52d22;
+    padding: 0px 12px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 2%;
+}
+
+header {
+    background-color: #e1abd7;
+    color: #c72d2d;
+    padding: 10px;
+    text-align: center;
+}
+
+.budget-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.budget-section p {
+    font-size: 1.5em;
+    font-family: arial;
+    color: #620303;
+}
+
+.user-budget input {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    width: 220px;
+}
+
+.products {
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: calc(33.33% - 34px);
+    text-align: center;
+    margin: 15px;
+    border: 2px solid #990a0a;
+    padding: 20px 0;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+.product .product-div input,
+.product .product-div button {
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+}
+
+.product .product-div button {
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.price {
+    margin: 5px 0;
+    color: chocolate;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width:768px) {
+    .budget-section {
+        flex-direction: column;
+    }
+}
